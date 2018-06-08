@@ -6,26 +6,12 @@ final int BANSIZE = 640;
 final int CELLSIZE = BANSIZE / 8;
 final int STONESIZE = round(CELLSIZE * 0.9);
 
-final int HITO = 1;
-final int COMP = 2;
-
 int[][] ban;
 int teban;
-int sente;
-int gote;
-int passCount;
-int moveCount;
-
 
 void setup()
 {
   teban = KURO;
-
-  sente = COMP;
-  gote = HITO;
-
-  passCount = 0;
-  moveCount = 0;
 
   size(640, 640);
   ban = new int[10][10];
